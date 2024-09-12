@@ -160,6 +160,8 @@ public class NamesrvController {
         }
 
         String[] watchFiles = {TlsSystemConfig.tlsServerCertPath, TlsSystemConfig.tlsServerKeyPath, TlsSystemConfig.tlsServerTrustCertPath};
+        
+        WATER_MARK_LOG.info("test");
 
         FileWatchService.Listener listener = new FileWatchService.Listener() {
             boolean certChanged, keyChanged = false;
